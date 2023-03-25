@@ -20,6 +20,10 @@ describe('Resistor Colors', () => {
   test('Orange and orange', () => {
     expect(decodedValue(['orange', 'orange'])).toEqual(33)
   })
+
+  test('Red and black', () => {
+    expect(decodedValue(['red', 'black'])).toEqual(20)
+  })
   
   test('Ignore addtestional colors', () => {
     expect(decodedValue(['green', 'brown', 'orange'])).toEqual(51)
